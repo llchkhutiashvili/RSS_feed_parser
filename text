@@ -1,0 +1,52 @@
+*   Trying 2.21.239.163:443...
+* Connected to moxie.foxnews.com (2.21.239.163) port 443
+* ALPN: curl offers h2,http/1.1
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: C=US; ST=New York; L=New York; O=Fox News Network, LLC; CN=wildcard.foxnews.com
+*  start date: May 15 00:00:00 2023 GMT
+*  expire date: May 15 23:59:59 2024 GMT
+*  issuer: C=US; O=DigiCert Inc; CN=DigiCert TLS RSA SHA256 2020 CA1
+*  SSL certificate verify result: unable to get local issuer certificate (20), continuing anyway.
+* using HTTP/2
+* [HTTP/2] [1] OPENED stream for https://moxie.foxnews.com/google-publisher/world.xml
+* [HTTP/2] [1] [:method: GET]
+* [HTTP/2] [1] [:scheme: https]
+* [HTTP/2] [1] [:authority: moxie.foxnews.com]
+* [HTTP/2] [1] [:path: /google-publisher/world.xml]
+* [HTTP/2] [1] [user-agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17]
+* [HTTP/2] [1] [accept: */*]
+> GET /google-publisher/world.xml HTTP/2
+Host: moxie.foxnews.com
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+Accept: */*
+
+* old SSL session ID is stale, removing
+< HTTP/2 200 
+< moxie-uptime: 61.19ms
+< x-robots-tag: noindex, nofollow
+< x-amzn-trace-id: Root=1-6612bca3-4ce91dd66fa6e1334a6e33de;Parent=1953b879d2f08e22;Sampled=0;lineage=c27b69c6:0
+< x-amz-cf-pop: IAD55-P5
+< content-type: text/xml;charset=utf-8
+< x-amz-apigw-id: V3JpkHLlIAMEU1A=
+< x-amzn-requestid: 6a8393d5-3165-437c-b123-999cae3224b6
+< x-amz-cf-id: uuceNwgo68Q7Bd_VVlitfH2F70zubW1VR5D9VmkX8eWKCoayOkHi0w==
+< etag: 91ca7d924e3bf80f0aef2d8be96ddb6b
+< moxie-version: 1.0
+< x-debug-path: /prod/fn/google-publisher/world.xml
+< x-origin: prod_moxie
+< x-served-by: cache-iad-kiad7000170-IAD, cache-iad-kiad7000170-IAD, cache-sof1510029-SOF
+< x-cache-hits: 0, 31, 1
+< x-timer: S1712563535.019806,VS0,VE1
+< cache-control: must-revalidate, max-age=20
+< expires: Mon, 08 Apr 2024 08:10:01 GMT
+< date: Mon, 08 Apr 2024 08:09:41 GMT
+< access-control-allow-credentials: false
+< access-control-allow-headers: *
+< access-control-allow-methods: GET,POST,OPTIONS
+< access-control-allow-origin: *
+< access-control-max-age: 86400
+< x-forwarded-host: moxie.foxnews.com
+< 
+* Connection #0 to host moxie.foxnews.com left intact
